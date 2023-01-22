@@ -1,0 +1,51 @@
+
+\documentclass{jpp}
+
+
+
+\title{Review on IoT Architecture of Interactive healthcare system with integrated voice assistant}
+
+\author{Prathosh V}
+
+\affiliation{Shiv Nadar University, Chennai}
+
+\begin{document}
+
+\maketitle
+
+
+
+
+\section{Introduction}
+In recent times, its almost impossible for anyone to pass a day without the aid of technology. Such is its impact on our lives. With technology being rapidly developing on several domains, Voice is gaining on popularity. In a survey conducted by Google  41\% of people, who own a voice activated speaker say it feels like talking to another person.Integrating voice assistance and healthcare offers a number of advantages. Voice assistants have the potential to remove barriers and give patients more control over their health, adding value to patient
+engagement.
+ 
+\section{Summary of the architecture}
+Any IoT product's architecture can be decomposed into 5 basic layers namely: Perception, Network, Middleware, Application and Business. The workflow starts as the ECG sensor makes ECG scans and sends the data extracted to the mobile application through bluetooth. The data obtained is stored on a medical cloud as well as a local cloud which can be reviewed by the patient whenever needed. In addition to this, the patient is also alerted when an abnormal behaviour is detected.The medical cloud has a crucial role in providing more personalized healthcare and information-based services. A web application is also designed in order to enable the patients communicate with the registered doctors to fix an appointment or notify during emergency. Here is where the voice assistant comes into play, taking the product one step further. It receives voice commands from the patients and then makes use of the web application to perform the required action. Since an EHR is easy for anyone to read an understand, even if the user asks for information, the web application would process the raw data and give it back to the user.
+
+\subsection{Role of Voice assistance}
+The different functionalities for the Voice applications (skills) are listed below:
+\begin{itemize}
+    \item It is enabled for the user to easily and instantaneously get advice about the readings made by the sensor.Based on the information drawn by the assistant, there are 3 possible outcomes: fixing an appointment as per convenience or make an emergency call or do nothing.
+    \item The next is fixing of convenient appointments. The assistant fetches date and time from the user, checks with doctor's availability through the web app and then fixes an appointment accordingly.
+    \item After the appointment, the patient might be required to undergo some regular therapy.In such a scenario, the assistant can make a regular reminder to the patient i.e.) for each user apart from the readings and EHR information on the web service, a therapy
+    information can also be stored.
+\end{itemize}
+
+\subsection{Mapping of the layers}
+Now the functioning of the product can be mapped to the 5 trivial layers as follows:
+\begin{itemize}
+    \item \textbf{Perception} - The ECG sensor contributes to this layer by registering ECG scans and acquiring raw data.
+    \item \textbf{Network} - This layer basically represents the transfer of data from the sensor to the cloud. Considering this product, the data is transferred to the cloud through bluetooth.
+    \item \textbf{Middleware} - All the data storage and processing works take place in this layer. The middleware for this product is where the raw data on the cloud is processed into EHR for retrival.
+    \item \textbf{Application} - This layer involves making an alert when there is any abnormal condition observed or booking an appointment when requested by the user.
+    \item \textbf{Business} - It involves making flowcharts, graphs, analysis of results, and how the device can be improvised, etc.
+
+
+\end{itemize}
+
+\section{Conclusion} 
+The Internet of Things, things which can communicate with each other via Internet, access data on the Internet, store and recover data, and interact with users. This above discussed product focuses on solving the obstacles patients face when using wearable health sensors in their home environment.The author hopes that this review paper helps in understanding the IoT architecture behind the proposed project.
+
+
+\end{document}
